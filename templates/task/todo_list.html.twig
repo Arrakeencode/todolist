@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title %}To-Do List{% endblock %}
+
+{% block body %}
+<h1>To-Do List</h1>
+<ul>
+    {% for task in tasks %}
+        <li>{{ task.tasks }} - {{ task.description }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
